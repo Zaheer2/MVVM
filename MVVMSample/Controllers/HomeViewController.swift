@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     
     // ViewModel 
     var viewModel : HomeViewModel = HomeViewModel()
-    var cellDataSource = [Movies]()
+    var cellDataSource = [HomeTableViewCellViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +60,7 @@ class HomeViewController: UIViewController {
         
         
         viewModel.cellDataSource.bind({ [weak self] arr_movies in
-            guard let self = self, let arr = arr_movies as [Movies]? else {
+            guard let self = self, let arr = arr_movies as [HomeTableViewCellViewModel]? else {
                 return
             }
             

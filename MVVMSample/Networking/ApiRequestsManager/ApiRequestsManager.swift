@@ -47,7 +47,7 @@ class ApiRequestsManager {
           "accept": "application/json",
           "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYmJlODUwMzYzNzY1YmVmOTE4NzIwNTdkZTJjZTFhMSIsInN1YiI6IjY1NTViOGM5ZWE4NGM3MTA5MTBjMDg5MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.DcKIk6QtcNcp3j3LFEkR6jhFmpohTfDCFMm7U7xWXTo"
         ]
-
+        
         var request = URLRequest(url: NSURL(string: "https://api.themoviedb.org/3/trending/movie/day?language=en-US")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)

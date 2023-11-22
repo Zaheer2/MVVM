@@ -31,9 +31,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeTableViewCell
-        let title = self.viewModel.passMoviesTitle(self.cellDataSource[indexPath.row])
-        cell.label_title.text = title
+//        let title = self.viewModel.passMoviesTitle(self.cellDataSource[indexPath.row])
+        
+        let cellViewModel = viewModel.cellDataSource.value[indexPath.row]
+        cell.setUpCell(viewModel: cellViewModel)
         return cell
     }
         
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        150.0
+    }
 }

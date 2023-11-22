@@ -13,7 +13,7 @@ class HomeViewModel {
     
     var isLoading : Observable = Observable(false)
     var dataSource : TrendingMoviesModel?
-    var cellDataSource : Observable<[Movies]> = Observable([])
+    var cellDataSource : Observable<[HomeTableViewCellViewModel]> = Observable([])
     
     func numberOfSections() -> Int {
         1
@@ -48,10 +48,10 @@ class HomeViewModel {
     }
     
     func mapCellDataSource() {
-        self.cellDataSource.value = self.dataSource?.results ?? []
+        self.cellDataSource.value =  self.dataSource?.results.compactMap({HomeTableViewCellViewModel(movie: $0)}) ?? []  // self.dataSource?.results ?? []
     }
     
-    func passMoviesTitle(_ obj : Movies) -> String {
-        return obj.name ?? obj.title ?? ""
-    }
+//    func passMoviesTitle(_ obj : Movies) -> String {
+//        return obj.name ?? obj.title ?? ""
+//    }
 }
