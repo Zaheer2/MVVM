@@ -54,4 +54,11 @@ class HomeViewModel {
 //    func passMoviesTitle(_ obj : Movies) -> String {
 //        return obj.name ?? obj.title ?? ""
 //    }
+    
+    func passSelectedObjectWith(_ id: Int) -> Movies? {
+        guard let id = id as Int?, let object = self.dataSource?.results.first(where: { $0.id == id }) else
+        { return nil }
+        
+        return object
+    }
 }

@@ -27,6 +27,7 @@ class HomeTableViewCell: UITableViewCell {
     private func setCorner() {
         self.view_Holder.setViewRound() // due to providing default value
 //        self.view_Holder.setViewRound(15)
+        self.imageView_Movie.setViewRound()
     }
     
     private func setBorder() {

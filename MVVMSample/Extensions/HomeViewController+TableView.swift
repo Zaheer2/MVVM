@@ -35,10 +35,25 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cellViewModel = viewModel.cellDataSource.value[indexPath.row]
         cell.setUpCell(viewModel: cellViewModel)
+        cell.selectionStyle = .none
         return cell
     }
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         150.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedIndexID = viewModel.cellDataSource.value[indexPath.row].id
+        guard let object = self.viewModel.passSelectedObjectWith(selectedIndexID) else { return }
+        
+        let detailViewModel = DetailsViewModel(object)
+        let detailVC = DetailsViewController(detailViewModel)
+        
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+        
+        
     }
 }

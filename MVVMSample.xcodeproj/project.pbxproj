@@ -24,6 +24,9 @@
 		E1932A182B0CB72700E139A0 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1932A172B0CB72700E139A0 /* SecondViewModel.swift */; };
 		E1932A1A2B0E212B00E139A0 /* HomeTableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1932A192B0E212B00E139A0 /* HomeTableViewCellExtension.swift */; };
 		E1932A1C2B0E21EF00E139A0 /* HomeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1932A1B2B0E21EF00E139A0 /* HomeTableViewCellViewModel.swift */; };
+		E1932A1E2B0F3D9000E139A0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1932A1D2B0F3D9000E139A0 /* DetailsViewController.swift */; };
+		E1932A202B0F60B400E139A0 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1932A1F2B0F60B400E139A0 /* DetailsViewModel.swift */; };
+		E1932A222B0F6D8700E139A0 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1932A212B0F6D8700E139A0 /* DetailsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		E1932A172B0CB72700E139A0 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		E1932A192B0E212B00E139A0 /* HomeTableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellExtension.swift; sourceTree = "<group>"; };
 		E1932A1B2B0E21EF00E139A0 /* HomeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		E1932A1D2B0F3D9000E139A0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E1932A1F2B0F60B400E139A0 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		E1932A212B0F6D8700E139A0 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				E1932A022B05446C00E139A0 /* HomeViewModel.swift */,
 				E1932A172B0CB72700E139A0 /* SecondViewModel.swift */,
 				E1932A1B2B0E21EF00E139A0 /* HomeTableViewCellViewModel.swift */,
+				E1932A1F2B0F60B400E139A0 /* DetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,6 +132,8 @@
 				E1932A0E2B0A2E9D00E139A0 /* Observable */,
 				E19329E72B05401900E139A0 /* HomeViewController.swift */,
 				E1932A132B0CB5B200E139A0 /* SecondViewController.swift */,
+				E1932A1D2B0F3D9000E139A0 /* DetailsViewController.swift */,
+				E1932A212B0F6D8700E139A0 /* DetailsViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 				E19329F02B05401B00E139A0 /* LaunchScreen.storyboard in Resources */,
 				E19329ED2B05401B00E139A0 /* Assets.xcassets in Resources */,
 				E19329EB2B05401900E139A0 /* Main.storyboard in Resources */,
+				E1932A222B0F6D8700E139A0 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +272,7 @@
 				E1932A082B05F58300E139A0 /* NetworkConstants.swift in Sources */,
 				E1932A162B0CB69D00E139A0 /* SecondViewController + TableView.swift in Sources */,
 				E19329FF2B05429300E139A0 /* HomeTableViewCell.swift in Sources */,
+				E1932A202B0F60B400E139A0 /* DetailsViewModel.swift in Sources */,
 				E19329E82B05401900E139A0 /* HomeViewController.swift in Sources */,
 				E1932A182B0CB72700E139A0 /* SecondViewModel.swift in Sources */,
 				E1932A0D2B05FBCF00E139A0 /* TrendingMoviesModel.swift in Sources */,
@@ -273,6 +284,7 @@
 				E1932A032B05446C00E139A0 /* HomeViewModel.swift in Sources */,
 				E1932A142B0CB5B200E139A0 /* SecondViewController.swift in Sources */,
 				E1932A012B05435D00E139A0 /* HomeViewController+TableView.swift in Sources */,
+				E1932A1E2B0F3D9000E139A0 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
